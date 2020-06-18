@@ -1,8 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.14.0"
 
-set :application, "net200601"
-set :repo_url, 'git@github.com:XSell/net200601.git'
+set :application, "net200622"
+set :repo_url, 'git@github.com:XSell/net200622.git'
 set :user, 'deploy'
 
 # Default branch is :master
