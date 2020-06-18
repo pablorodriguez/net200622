@@ -51,6 +51,7 @@ For more information, please refer to **XSELL Coding Guidelines and Standards** 
 3. install dependencies:
 ```
 bundle install
+yarn
 ```
 4. Initialize your database:
 ```
@@ -82,3 +83,20 @@ RAILS_ENV=test bundle exec rails db:create db:migrate db:seed
 ```
 bundle exec rspec -fd
 ```
+
+## Known Bugs
+### Webpack compiler issue
+Problem:
+```
+Error: Cannot find module 'node-libs-browser/mock/empty'
+```
+
+Cause:
+```
+Incompatibilities with `node-libs-browser` v2.2.1
+```
+
+Resolution:<br/>
+Downgrade to `node-libs-browser` v2.2.0<br/>
+1. merge branch `bugfix/node-libs-browser-v2.2.0`
+
