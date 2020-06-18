@@ -1,0 +1,6 @@
+<nav>
+  <% if current_user.present? %>
+  <span>Logged in as: <%= current_user.email %></span>
+  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+  <% end %>
+<nav>

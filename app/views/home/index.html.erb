@@ -1,0 +1,8 @@
+<% content_for :head do %>
+  <%= javascript_pack_tag 'home' %>
+<% end %>
+<div>
+  <h1>Hello world! Here's a number: <%= @home %></h1>
+  <button id='admin-button'>Am I an admin?</button>
+  <span id='result'></span>
+</div>
