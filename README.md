@@ -86,17 +86,15 @@ bundle exec rspec -fd
 
 ## Known Bugs
 ### Webpack compiler issue
-Problem:
+**Problem**:
 ```
 Error: Cannot find module 'node-libs-browser/mock/empty'
 ```
 
-Cause:
-```
+**Cause**:<br/>
 Incompatibilities with `node-libs-browser` v2.2.1
-```
 
-Resolution:<br/>
+**Resolution**:<br/>
 Downgrade to `node-libs-browser` v2.2.0<br/>
 1. merge branch `bugfix/node-libs-browser-v2.2.0`
 
