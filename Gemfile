@@ -47,6 +47,7 @@ group :development, :test do
   gem 'mock_redis'
   gem 'rspec_junit_formatter'
   gem 'brakeman'
+  gem 'simplecov', require: false
 end
 
 group :development do
