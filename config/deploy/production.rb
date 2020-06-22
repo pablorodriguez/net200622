@@ -1,6 +1,7 @@
 # re-using the same server for staging and production
 set :branch, ENV.fetch('REVISION', 'master')
 set :rails_env, 'production'
+server '10.35.2.232', user: 'deploy', roles: %w{web app}
 # server 'FILL ME IN', user: 'deploy', roles: %w{web app}
 # server-based syntax
 # ======================

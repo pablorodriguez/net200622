@@ -1,7 +1,8 @@
 # re-using the same server for staging and production
 set :branch, ENV.fetch('REVISION', 'develop')
 set :rails_env, 'production'
-server 'FILL ME IN', user: 'deploy', roles: %w{web app}
+server '10.35.2.232', user: 'deploy', roles: %w{web app}
+# server 'FILL ME IN', user: 'deploy', roles: %w{web app}
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
